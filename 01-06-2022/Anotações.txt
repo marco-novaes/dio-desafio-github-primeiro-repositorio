@@ -1,0 +1,1 @@
+Para clonar repositório do github na pasta criada local basta clicar com o botâo direito do mouse dentro e selecionar Git Bash Here
