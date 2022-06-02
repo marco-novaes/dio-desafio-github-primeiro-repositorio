@@ -7,10 +7,10 @@
     font-size: 14px;
 }
 
-body{
+body {
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(243,243,243);
+    background-color: rgb(243, 243, 243);
     margin: 0;
     padding: 0;
     display: flex;
@@ -38,8 +38,8 @@ body{
 
 .instagram-continue {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    align-items: center; /* horizontal */
+    justify-content: space-around; /* vertical */
     flex-direction: column;
     width: 50%;
     min-height: 34rem;
@@ -50,9 +50,9 @@ body{
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #ffffff;
     width: 100%;
-    padding: 1.3rem;
+    padding: 1.3rem 0;
     border: 1px solid lightgray;
 }
 
@@ -73,12 +73,12 @@ body{
 }
 
 .profile-photo img {
-    height: 16rem;
+    height: 6rem;
 }
 
 .instagram-login {
     background-color: #0095f6;
-    color: #fff;
+    color: #ffffff;
     padding: 8px;
     border-radius: 4px;
 }
@@ -89,7 +89,7 @@ body{
 }
 
 .not-account {
-    color: rgb(160,160,160);
+    color: rgb(160, 160, 160);
 }
 
 .link-blue {
@@ -105,7 +105,7 @@ body{
     padding: 1.3rem 0;
 }
 
-.donwload {
+.download {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
@@ -115,19 +115,20 @@ body{
 
 .app-download {
     height: 3rem;
-    width: 3rem;
+    width: 10rem;
     background-size: cover;
 }
 
 .app-download:nth-child(1) {
-    background-image: url('./imgs/apple-button.png');
+    background-image: url('./img/apple-button.png');
 }
 
 .app-download:nth-child(2) {
-    background-image: url('./imgs/googleplay-button.png');
+    background-image: url('./img/googleplay-button.png');
 }
 
-/**/
+/* media queries */
+
 
 @media (max-width: 1024px) {
     .instagram-wrapper {
@@ -136,10 +137,10 @@ body{
 }
 
 @media (max-width: 650px) {
-
     body {
-        background-color: #fff;
+        background-color: #ffffff;
     }
+
     .instagram-wrapper {
         width: 90%;
     }
@@ -151,8 +152,8 @@ body{
     .instagram-continue {
         width: 100%;
     }
-
+    
     .group {
-        border:  1px solid transparent;
+        border: 1px solid transparent;
     }
 }
